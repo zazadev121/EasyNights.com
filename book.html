@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Booking Room</title>
+  </head>
+  <body>
+    <main>
+      <nav class="navbar">
+        <a href="./index.html"><h1>EasyNights</h1></a>
+        <ul>
+          <a href="./index.html"><li>Home</li></a>
+          <a href="./Rooms.html"><li>Rooms</li></a>
+          <a href="./hotels.html"><li>Hotels</li></a>
+          <a href=""><li>Booked Rooms</li></a>
+        </ul>
+        <i class="fa-solid fa-bars fa-xl"></i>
+      </nav>
+
+      <section class="room-details">
+        <div id="room-info"></div>
+        <br />
+        <div class="input-button">
+          <label for="date-input">Check in</label>
+          <input type="date" name="" id="date-input" class="date-input" />
+          <br>
+          <label for="input-2">Check Out</label>
+          <input type="date" name="" id="input-2" class="date-input" />
+          <br>
+          <label for="guest-count">Guest Count</label>
+          <input type="number" id="guest-count" class="guest-input" min="1"value="1" />
+          <br>
+          <button id="submit-button">Submit</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./book.js"></script>
+  </body>
+</html>

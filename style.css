@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  padding: 15px 0;
+  z-index: 1000;
+  border-bottom: rgba(0, 0, 0, 0.878) 2px solid;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.guests-fav-rooms {
+  margin-top: 30px;
+  align-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.guests-fav-rooms img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.h3-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 25px;
+}
+.h1-div {
+  display: flex;
+  justify-content: center;
+}
+
+.grid {
+  border: 1px solid;
+}
+.book-button {
+  border-top: 1px black solid;
+  border: none;
+  color: white;
+  background-color: black;
+  width: 100%;
+  max-height: 100px;
+  height: 100px;
+  min-height: auto;
+  cursor: pointer;
+  font-size: larger;
+}
+.book-button:hover {
+  background-color: rgba(0, 0, 0, 0.141);
+  color: rgb(10, 7, 7);
+  transition: 0.7s;
+}
+
+.usp-div {
+  display: flex;
+  justify-content: center;
+}
+.USP {
+  margin-top: 50px;
+}
+
+.info-div {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.fa-martini-glass {
+  font-size: 50px;
+}
+.son1 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  border-bottom: 1px black solid;
+  column-gap: 10px;
+}
+.lorem-parag {
+  width: 300px;
+}
+.read-more {
+  color: rgb(0, 71, 71);
+}
+.read-more:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.son2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  border-bottom: 1px black solid;
+  column-gap: 10px;
+}
+.son3 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  border-bottom: 1px black solid;
+  column-gap: 10px;
+}
+.son4 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+  border-bottom: 1px black solid;
+  column-gap: 10px;
+}
+.lorem-ipsum {
+  margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lorem-ipsum h3 {
+  width: 500px;
+  height: auto;
+}
+.h3info {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.fa-bars {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .fa-bars {
+    color: black;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    top: 58px;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    display: none;
+    flex-direction: column;
+  }
+
+  ul.show {
+    display: flex;
+  }
+}
+
+.son {
+  width: 400px;
+}
+
+.parent {
+  flex-wrap: wrap;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.room-button {
+  border-top: 1px black solid;
+  border: none;
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  min-height: auto;
+  cursor: pointer;
+  font-size: larger;
+}
+.room-button:hover {
+  background-color: rgba(0, 0, 0, 0.141);
+  color: rgb(10, 7, 7);
+  transition: 0.7s;
+}
+.rooms {
+  margin-top: 90px;
+  box-sizing: border-box;
+}
+.all-btns {
+  margin-top: 100px;
+
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+
+.appended-divs {
+  box-shadow: 0 10px 10px -5px black;
+}
+.all-button {
+  width: 100px;
+  height: auto;
+  font-size: larger;
+  border: none;
+  border-radius: 30px;
+  background-color: rgb(116, 197, 206);
+  color: white;
+}
+
+.all-button:hover {
+  background-color: rgba(116, 197, 206, 0.541);
+  color: black;
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.same-buttons {
+  border: none;
+  background-color: white;
+  font-size: larger;
+  border-radius: 20px;
+  width: 300px;
+  height: auto;
+}
+
+.same-buttons:hover {
+  background-color: rgba(0, 0, 0, 0.141);
+  color: rgb(10, 7, 7);
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+.maindiv {
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.book-img {
+  width: 100%;
+  height: auto;
+}
+
+.input-div {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+#filter-submit {
+  width: 200px;
+  height: auto;
+  border: none;
+  background-color: rgba(32, 186, 186, 0.536);
+  color: rgb(255, 255, 255);
+  font-size: larger;
+}
+
+#filter-submit:hover {
+  transition: 0.8s;
+  background-color: darkblue;
+}
+.filter-input {
+  border: none;
+  border-bottom: 3px solid rgb(45, 0, 0);
+}
+.filter-input:focus {
+  outline: none;
+  border: none;
+  transition: 0.8s ease-in;
+  border-bottom: 3px solid rgb(0, 0, 0);
+  box-shadow: none;
+}
+.room-details {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+}
+
+.input-button {
+  display: flex;
+  flex-direction: column;
+}
+
+.date-input {
+  max-width: 300px;
+  width: 100%;
+  padding-left: 20px;
+  font-size: larger;
+}
+
+#submit-button {
+  border: none;
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 50px;
+}
+
+#submit-button:hover {
+  background-color: rgba(0, 0, 0, 0.141);
+  color: rgb(10, 7, 7);
+  transition: 0.7s;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 780px) {
+  .room-details {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .input-button {
+    width: 100%;
+    align-items: center;
+  }
+
+  .date-input {
+    width: 100%;
+    padding-left: 10px;
+    font-size: medium;
+  }
+
+  #submit-button {
+    width: 150px;
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .input-div {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .same-buttons {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .all-button {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .maindiv {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 50px;
+  }
+}
