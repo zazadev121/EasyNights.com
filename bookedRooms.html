@@ -31,36 +31,10 @@
         <i class="fa-solid fa-bars fa-xl"></i>
       </nav>
 
-      <div class="all-btns">
-        <button class="all-button">ALL</button>
-        <button class="same-buttons">Single Room</button>
-        <button class="same-buttons">Double Room</button>
-        <button class="same-buttons">Deluxe Room</button>
-      </div>
-      <div class="input-div">
-        <input
-          type="number"
-          name=""
-          id="min-price"
-          placeholder="Min Price :$"
-          class="filter-input"
-          step="10"
-          min="0"
-        />
-        <button id="filter-submit">Filter</button>
-        <input
-          type="number"
-          name=""
-          id="max-price"
-          placeholder="Max Price :$"
-          class="filter-input"
-          step="10"
-          min="0"
-        />
-      </div>
-      <div class="guests-fav-rooms rooms"></div>
+      <section id="main"></section>
     </main>
 
-    <script src="./rooms.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./bookedRooms.js"></script>
   </body>
 </html>

@@ -21,7 +21,8 @@
           <a href="./index.html"><li>Home</li></a>
           <a href="./Rooms.html"><li>Rooms</li></a>
           <a href="./hotels.html"><li>Hotels</li></a>
-          <a href=""><li>Booked Rooms</li></a>
+          <a href="./bookedRooms.html"><li>Booked Rooms</li></a>
+          <a href="./login.html"><li>Log in</li></a>
         </ul>
         <i class="fa-solid fa-bars fa-xl"></i>
       </nav>
@@ -31,18 +32,25 @@
         <br />
         <div class="input-button">
           <label for="date-input">Check in</label>
-          <input type="date" name="" id="date-input" class="date-input" />
-          <br>
+          <input type="date" id="date-input" class="date-input" required />
+          <br />
           <label for="input-2">Check Out</label>
-          <input type="date" name="" id="input-2" class="date-input" />
-          <br>
+          <input type="date" name="" id="input-2" class="date-input" required />
+          <br />
           <label for="guest-count">Guest Count</label>
-          <input type="number" id="guest-count" class="guest-input" min="1"value="1" />
-          <br>
-          <button id="submit-button">Submit</button>
+          <input
+            type="number"
+            id="guest-count"
+            class="guest-input"
+            min="1"
+            value="1"
+          />
+          <br />
+          <button id="submit-button">Book Now</button>
         </div>
       </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <script src="./book.js"></script>
   </body>
